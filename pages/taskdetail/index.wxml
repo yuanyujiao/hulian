@@ -1,0 +1,3 @@
+<van-panel title="标题" desc="描述信息" status="状态">
+  <view>内容</view>
+</van-panel>

@@ -1,0 +1,11 @@
+<!--pages/index/index.wxml-->
+<view class="viewCenter">
+  <view class="viewPhoto">
+    <open-data type="userAvatarUrl"></open-data>
+    <open-data type="userNickName"></open-data>
+  </view>
+</view>
+
+<view data-hi="WeChat" bindtap="tapName" class="viewCenter">
+  <button type="primary" open-type="getUserInfo" bindgetuserinfo="login"> 授权 </button>
+</view>

@@ -1,0 +1,17 @@
+<form bindsubmit="formSubmit" >
+<view class="viewCenter">
+  欢迎来到户莲
+</view>
+<view class="section">
+  任务列表
+</view>
+  <view class="btn-area">
+    <button formType="submit" class="buttonFont">
+    <text class="header">任务一</text>：
+    <text class="content">第一个小任务</text></button>
+    <button formType="submit" class="buttonFont">任务二</button>
+    <button formType="submit" class="buttonFont">任务三</button>
+    <button formType="submit" class="buttonFont">任务四</button>
+    <button formType="submit" class="buttonFont">任务五</button>
+  </view>
+</form>

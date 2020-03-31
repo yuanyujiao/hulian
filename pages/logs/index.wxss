@@ -1,0 +1,14 @@
+.viewCenter {
+  text-align: center;
+}
+
+.buttonFont {
+  font-size: 30rpx;
+  margin-top: 10rpx
+}
+.header{
+  font-size: 30rpx
+}
+.content{
+  font-size: 25rpx
+}
