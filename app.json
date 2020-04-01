@@ -1,12 +1,30 @@
 {
   "pages": [
-    "pages/index/index",
-    "pages/logs/index",
     "pages/tasks/index",
-    "pages/taskdetail/index"
+    "pages/taskdetail/index",
+    "pages/mytasks/index"
   ],
   "window": {
-    "navigationBarTitleText": "户莲"
+    "navigationBarTitleText": "户莲",
+    "navigationBarBackgroundColor": "#ffffff",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "backgroundColor": "#eeeeee",
+    "list": [
+      {
+        "pagePath": "pages/tasks/index",
+        "text": "首页"
+      },
+      {
+        "pagePath": "pages/mytasks/index",
+        "text": "我的"
+      },
+      {
+        "pagePath": "pages/taskdetail/index",
+        "text": "创建"
+      }
+    ]
   },
   "networkTimeout": {
     "request": 10000,

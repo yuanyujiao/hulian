@@ -1,1 +1,6 @@
 /* pages/taskdetail/index.wxss */
+
+.buttonIn {
+  text-align: center;
+  padding: 10px;
+}

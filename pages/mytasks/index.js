@@ -1,4 +1,4 @@
-// pages/taskdetail/index.js
+// pages/mytasks/index.js
 Page({
 
   /**
@@ -62,46 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  nameChange:function(e){
-    this.setData({
-      name: e.detail
-    })
-  },
-  addressChange: function (e) {
-    this.setData({
-      address: e.detail
-    })
-  },
-  phoneChange: function (e) {
-    this.setData({
-      phone: e.detail
-    })
-  },
-  payChange: function (e) {
-    this.setData({
-      pay: e.detail
-    })
-  },
-  contentChange: function (e) {
-    this.setData({
-      content: e.detail
-    })
-  },
-  savetask:function(){
-    wx.getStorage({
-      key: 'alltasks',
-      success(res) {
-        console.log(res.data)
-        alltasks.push(this.data)
-      },
-      fail(res){
-        wx.setStorage({
-          key: 'alltasks',
-          data: this.data,
-        })
-      }
-    })
-   
   }
 })

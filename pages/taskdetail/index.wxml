@@ -1,3 +1,10 @@
-<van-panel title="标题" desc="描述信息" status="状态">
-  <view>内容</view>
-</van-panel>
+<van-cell-group>
+  <van-field value="{{ name }}" clearable label="姓名" placeholder="请输入用户名" bind:change="nameChange" />
+  <van-field value="{{ address }}" clearable label="地址" placeholder="请输入目的地" bind:change="addressChange" />
+  <van-field value="{{ phone }}" clearable label="手机号" placeholder="请输入手机号" bind:change="phoneChange" />
+  <van-field value="{{ pay }}" clearable label="赏金" placeholder="请输入赏金" right-icon="gold-coin-o" bind:change="payChange" />
+  <van-field value="{{ content }}" clearable label="详情" placeholder="请输入详情" type="textarea" bind:change="contentChange" />
+  <view class="buttonIn">
+    <van-button type="primary" bind:click="savetask">保存</van-button>
+  </view>
+</van-cell-group>
