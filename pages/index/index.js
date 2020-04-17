@@ -77,4 +77,7 @@ Page({
     app.globalData.unionid = app.globalData.unionid || (wx.cloud.callFunction({ name: 'login' })).result.UNIONID
     console.log(app.globalData.unionid)
   },
+  getuserinfo:function(){
+    console.log("abc---")
+  }
 })

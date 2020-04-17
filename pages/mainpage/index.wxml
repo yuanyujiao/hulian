@@ -11,6 +11,7 @@
   </van-row>
   <van-row class="rowstyle">
     <van-col span="12">
+
       <image class="imageSize" src="/../../image/mycreatetasks.png" bindtap="openmycreatetasks"/>
       <view class="fontSize">创建的任务</view>
     </van-col>
