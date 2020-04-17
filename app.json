@@ -1,8 +1,9 @@
 {
   "pages": [
     "pages/tasks/index",
-    "pages/taskdetail/index",
-    "pages/mytasks/index"
+    "pages/newtask/index",
+    "pages/mytasks/index",
+    "pages/mainpage/index"
   ],
   "window": {
     "navigationBarTitleText": "户莲",
@@ -21,7 +22,7 @@
         "text": "我的"
       },
       {
-        "pagePath": "pages/taskdetail/index",
+        "pagePath": "pages/newtask/index",
         "text": "创建"
       }
     ]

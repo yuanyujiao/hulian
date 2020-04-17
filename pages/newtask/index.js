@@ -1,4 +1,4 @@
-// pages/logs/index.js
+// pages/taskdetail/index.js
 Page({
 
   /**
@@ -62,5 +62,35 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  nameChange:function(e){
+    this.setData({
+      name: e.detail
+    })
+  },
+  addressChange: function (e) {
+    this.setData({
+      address: e.detail
+    })
+  },
+  phoneChange: function (e) {
+    this.setData({
+      phone: e.detail
+    })
+  },
+  payChange: function (e) {
+    this.setData({
+      pay: e.detail
+    })
+  },
+  contentChange: function (e) {
+    this.setData({
+      content: e.detail
+    })
+  },
+  savetask:function(){
+    console.log("data", this.data)
+    let data=wx.getStorageSync("alltasks")
+    console.log("storage data",data)
   }
 })

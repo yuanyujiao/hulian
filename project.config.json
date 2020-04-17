@@ -73,6 +73,27 @@
 					"pathName": "pages/tasks/index",
 					"query": "",
 					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mytasks/index",
+					"pathName": "pages/mytasks/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/index/index",
+					"pathName": "pages/index/index",
+					"query": "",
+					"scene": null
+				},
+				{
+					"id": -1,
+					"name": "pages/mainpage/index",
+					"pathName": "pages/mainpage/index",
+					"query": "",
+					"scene": null
 				}
 			]
 		}
