@@ -62,5 +62,9 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  getuserinfo:function(){
+    console.log("abc---")
   }
+
 })

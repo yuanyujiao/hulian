@@ -1,10 +1,12 @@
-<van-panel wx:for="{{tasking}}" wx:key="id" title="{{item.title}}" desc="{{item.content+item.phone}}" status="进行中">
-</van-panel>
+<view wx:for="{{tasking}}" wx:key="id">
+  <van-panel title="{{item.title}}" desc="{{item.content+item.phone}}" status="进行中"></van-panel>
+</view>
+
 <van-cell-group>
   <view wx:for="{{tasks}}" wx:key="id">
-    <van-cell slot="value" title="{{item.title}}"  label="{{item.content}}" >
-      <van-button size="mini" type="danger" bind:click="grabSheet">抢单</van-button>
+    <van-cell slot="value" title="{{item.title}}" label="{{item.content}}">
+      <van-button size="mini" type="danger" data-item="{{item}}" bind:click="grabSheet">抢单</van-button>
     </van-cell>
-  </view> 
+  </view>
 </van-cell-group>
 <van-dialog id="van-dialog" />

@@ -1,3 +1,13 @@
 {
-  "usingComponents": {}
+  "usingComponents": {
+    "van-index-bar": "../../miniprogram_npm/@vant/weapp/index-bar/index",
+    "van-index-anchor": "../../miniprogram_npm/@vant/weapp/index-anchor/index",
+    "van-panel": "../../miniprogram_npm/@vant/weapp/panel/index",
+    "van-cell-group": "../../miniprogram_npm/@vant/weapp/cell-group/index",
+    "van-cell": "../../miniprogram_npm/@vant/weapp/cell/index",
+    "van-button": "../../miniprogram_npm/@vant/weapp/button/index",
+    "van-tag": "../../miniprogram_npm/@vant/weapp/tag/index",
+    "van-dialog": "../../miniprogram_npm/@vant/weapp/dialog/index",
+    "van-progress": "../../miniprogram_npm/@vant/weapp/progress/index"
+  }
 }

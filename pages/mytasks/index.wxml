@@ -1,2 +1,9 @@
-<!--pages/mytasks/index.wxml-->
-<text>pages/mytasks/index.wxml</text>
+<van-cell-group>
+  <view wx:for="{{mytasks}}" wx:key="id">
+    <van-panel title="{{item.title}}" desc="{{item.content}}" borded="{{false}}">
+      <van-progress custom-class="prograss" percentage="{{ item.percentage}}" pivot-text="{{item.status}}" 
+      pivot-color="{{ item.status ==='完成'? 'green' : 'red' }}"
+      color="{{ item.status ==='完成'? 'green' : 'red' }}"  />
+    </van-panel>
+  </view>
+</van-cell-group>

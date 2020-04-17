@@ -1,0 +1,35 @@
+<view class="viewCenter">
+  <van-row class="rowstyle">
+    <van-col span="12">
+      <image class="imageSize" src="/../../image/tasks.png" />
+      <view class="fontSize">任务列表</view>
+    </van-col>
+    <van-col span="12">
+      <image class="imageSize" src="/../../image/mytasks.png" />
+      <view class="fontSize">接收的任务</view>
+    </van-col>
+  </van-row>
+  <van-row class="rowstyle">
+    <van-col span="12">
+      <image class="imageSize" src="/../../image/mycreatetasks.png" />
+      <view class="fontSize">创建的任务</view>
+    </van-col>
+    <van-col span="12">
+      <image class="imageSize" src="/../../image/newtask.png" />
+      <view class="fontSize">创建任务</view>
+    </van-col>
+  </van-row>
+  <view>
+    <van-row class="infomation" gutter="20">
+      <van-col span="3">
+        <image class="imageSize" src="/../../image/myphoto.png" />
+      </van-col>
+      <van-col class="infomationPosition" span="6">
+        <lable>个人信息</lable>
+      </van-col>
+      <van-col span="2" offset="13">
+        <van-icon name="arrow" />
+      </van-col>
+    </van-row>
+  </view>
+</view>

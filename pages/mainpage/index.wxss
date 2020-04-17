@@ -1,0 +1,60 @@
+page {
+  height: 100%;
+}
+
+.viewCenter {
+  text-align: center;
+  margin: 50px;
+  height: 100%;
+}
+
+.buttonFont {
+  font-size: 30rpx;
+  margin-top: 10rpx;
+}
+
+.header {
+  font-size: 30rpx;
+}
+
+.content {
+  font-size: 25rpx;
+}
+
+.rowSize {
+  height: 100%;
+  width: 100%;
+}
+
+.imageSize {
+  height: 50px;
+  width: 50px;
+}
+
+.fontSize {
+  font-size: 60%;
+}
+
+.rowstyle {
+  margin: 10px;
+}
+
+.bottomRow {
+}
+
+.height {
+  height: 100%;
+}
+
+.infomation {
+  position: absolute;
+  left: 10px;
+  bottom: 10px;
+  width: 90%;
+  background-color:#BCD2EE;
+  margin:10px;
+}
+
+.infomationPosition {
+  margin-top: 10px;
+}
