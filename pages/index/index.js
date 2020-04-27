@@ -64,11 +64,13 @@ Page({
 
   },
   login: function (e) {
+    let url = getCurrentPages()
     wx.getUserInfo({
       success: function (res) {
         var userInfo = res.userInfo
-        wx.navigateTo({
-          url: '../logs/index',
+        wx.setStorageSync("userInfo", e.detail.userInfo)
+        wx.switchTab({
+          url: `/${url[0].route}`,
         })
       }
     })
