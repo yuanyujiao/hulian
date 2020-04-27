@@ -65,34 +65,53 @@ Page({
   onShareAppMessage: function() {
 
   },
+
   //抢单click事件
   grabSheet: function(e) {
-    Dialog.confirm({
-        title: '',
-        message: '确认抢单吗？'
-      })
-      .then(() => {
-        let currentItem = e.currentTarget.dataset.item
-        currentItem.status="进行中"
-        currentItem.percentage = "30"
-        let tasks = this.data.tasks.filter(item => item.id != currentItem.id)
-        let tasking = this.data.tasking
-        let mytasks = this.data.mytasks
-        tasking.push(currentItem)
-        mytasks.push(currentItem)
-        this.setData({
-          tasks,
-          tasking,
-          mytasks
-        })
-      wx.setStorage({
-        key: 'alltasks',
-        data: this.data,
-      })
-        console.log("this.data---",this.data)
-      })
-      .catch(() => {
-        Dialog.close();
-      });
+    const that = this
+    // 查看是否授权
+    wx.getSetting({
+      success(res) {
+        if (!res.authSetting['scope.userInfo']) {
+          wx.navigateTo({
+            url: "/pages/index/index"
+          })
+        } else {
+          // 已经授权，可以直接调用 getUserInfo 获取头像昵称
+          wx.getUserInfo({
+            success: function (res) {
+              console.log(res.userInfo)
+            }
+          })
+          Dialog.confirm({
+            title: '',
+            message: '确认抢单吗？'
+          })
+            .then(() => {
+              let currentItem = e.currentTarget.dataset.item
+              currentItem.status = "进行中"
+              currentItem.percentage = "30"
+              let tasks = that.data.tasks.filter(item => item.id != currentItem.id)
+              let tasking = that.data.tasking
+              let mytasks = that.data.mytasks
+              tasking.push(currentItem)
+              mytasks.push(currentItem)
+              that.setData({
+                tasks,
+                tasking,
+                mytasks
+              })
+              wx.setStorage({
+                key: 'alltasks',
+                data: that.data,
+              })
+              console.log("this.data---", that.data)
+            })
+            .catch(() => {
+              Dialog.close();
+            });
+        }
+      }
+    })
   },
 })

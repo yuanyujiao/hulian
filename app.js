@@ -139,9 +139,16 @@ App({
     })
   },
   onShow(options) {
-   
+    wx.getSetting({
+      success(res) {
+        if (!res.authSetting['scope.userInfo']) {
+          wx.navigateTo({
+            url: "/pages/index/index"
+          })
+        }
+      }
+    })
   },
-   
   onHide() {
     // Do something when hide.
   },
