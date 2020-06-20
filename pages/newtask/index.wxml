@@ -3,7 +3,10 @@
   <van-field value="{{ address }}" clearable label="地址" placeholder="请输入目的地" bind:change="addressChange" />
   <van-field value="{{ phone }}" clearable label="手机号" placeholder="请输入手机号" bind:change="phoneChange" />
   <van-field value="{{ pay }}" clearable label="赏金" placeholder="请输入赏金" right-icon="gold-coin-o" bind:change="payChange" />
-  <van-field value="{{ content }}" clearable label="详情" placeholder="请输入详情" type="textarea" bind:change="contentChange" />
+  <van-field value="{{ title }}" clearable label="标题" placeholder="请输入标题" bind:change="titleChange" />
+  <van-field value="{{ content }}" type="textarea" rows="2"
+  label="详情" placeholder="请输入详情" maxlength="50" show-word-limit
+  autosize bind:change="contentChange" />
   <view class="buttonIn">
     <van-button type="primary" bind:click="savetask">保存</van-button>
   </view>

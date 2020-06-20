@@ -83,14 +83,35 @@ Page({
       pay: e.detail
     })
   },
+  titleChange: function (e) {
+    this.setData({
+      title: e.detail
+    })
+  },
   contentChange: function (e) {
     this.setData({
       content: e.detail
     })
   },
   savetask:function(){
-    console.log("data", this.data)
+    let newdata=this.data
     let data=wx.getStorageSync("alltasks")
-    console.log("storage data",data)
+    //let mytasks = data.mytasks
+    let tasks = data.tasks
+    let bb = new Array();//创建一个空数组，用于存放id字段的值
+    // for(let i=0;i<mytasks.length;i++){
+    //     bb.push(mytasks[i].id);
+    // };
+    for(let i=0;i<tasks.length;i++){
+      bb.push(tasks[i].id);
+  };
+    newdata.id=Math.max(...bb)+1
+    //data.mytasks.push(newdata)
+    data.tasks.unshift(newdata)
+    wx.setStorage({
+      key: 'alltasks',
+      data: data,
+    })
+    wx.switchTab({url: '../tasks/index'})
   }
 })

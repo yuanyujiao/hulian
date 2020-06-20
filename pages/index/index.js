@@ -67,8 +67,8 @@ Page({
     wx.getUserInfo({
       success: function (res) {
         var userInfo = res.userInfo
-        wx.navigateTo({
-          url: '../logs/index',
+        wx.switchTab({
+          url: '../tasks/index',
         })
       }
     })

@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/index/index",
     "pages/tasks/index",
     "pages/newtask/index",
     "pages/mytasks/index",
